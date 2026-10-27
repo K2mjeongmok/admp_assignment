@@ -1,0 +1,78 @@
+{
+  "week2_kinematics": {
+    "left": {
+      "fk_pos_max_err_m": 6.661338147750939e-16,
+      "fk_rot_max_err": 1.1102230246251565e-15,
+      "jv_max_err": 8.881784197001252e-16,
+      "jw_max_err": 2.4424906541753444e-15,
+      "n_samples": 200
+    },
+    "right": {
+      "fk_pos_max_err_m": 6.661338147750939e-16,
+      "fk_rot_max_err": 1.0824674490095276e-15,
+      "jv_max_err": 7.771561172376096e-16,
+      "jw_max_err": 2.1094237467877974e-15,
+      "n_samples": 200
+    }
+  },
+  "week3_gravity": {
+    "max_abs_err_Nm": 6.237043903567496e-08,
+    "max_abs_g_Nm": 26.843251416396207,
+    "n_samples": 50
+  },
+  "stages": {
+    "w3_zero": {
+      "z_drop_mm": 189.92498415784064,
+      "duration_s": 0.9990000000000008
+    },
+    "w3_g_torque_hold": {
+      "max_drift_before_push_mm": 4.474980384000848
+    },
+    "w3_g_current": {
+      "final_disp_mm": 7.885766519288351,
+      "max_disp_mm": 7.885766579727553,
+      "drift_before_push_mm": 0.0,
+      "stop_time_s": 0.21199999999996622
+    },
+    "w3_gf_current": {
+      "final_disp_mm": 275.04951984360275,
+      "max_disp_mm": 275.04951984360275,
+      "drift_before_push_mm": 35.781296561248936,
+      "stop_time_s": 1.8989999999997806
+    },
+    "w3_g_torque": {
+      "final_disp_mm": 370.567740590955,
+      "max_disp_mm": 370.567740590955,
+      "drift_before_push_mm": 4.552820626011877,
+      "stop_time_s": 1.8989999999997806
+    },
+    "w5_spring": {
+      "err_tail_mean_mm": 47.13998296628784,
+      "err_tail_max_mm": 68.80770430873386,
+      "null_speed_tail": 0.7822144285432432,
+      "max_path_dev_mm": 127.09234696116545,
+      "max_contacts": 6
+    },
+    "w5_spring_c0": {
+      "err_tail_mean_mm": 0.7360079158108741,
+      "err_tail_max_mm": 1.1269667431125003,
+      "null_speed_tail": 0.011654927839853422,
+      "max_path_dev_mm": 41.93123803726952,
+      "max_contacts": 0
+    },
+    "w5_spring_c0_task": {
+      "err_tail_mean_mm": 0.00042918738730283394,
+      "err_tail_max_mm": 0.0007526367470302188,
+      "null_speed_tail": 5.671103509664004e-05,
+      "max_path_dev_mm": 9.575966663544408,
+      "max_contacts": 0
+    },
+    "w5_full": {
+      "err_tail_mean_mm": 0.0016025171368655735,
+      "err_tail_max_mm": 0.003129386267521127,
+      "null_speed_tail": 0.00031646443606235574,
+      "max_path_dev_mm": 17.98140895560917,
+      "max_contacts": 0
+    }
+  }
+}

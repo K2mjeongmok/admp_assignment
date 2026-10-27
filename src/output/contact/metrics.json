@@ -1,0 +1,97 @@
+{
+  "servo": {
+    "f_total_peak_N": 132.99758311827307,
+    "f_total_ss_N": 36.61654913402043,
+    "f_fingers_ss_N": [
+      8.854487940315922,
+      6.8779377996547,
+      5.861357828764495,
+      15.022765565285333
+    ],
+    "f_palm_ss_N": 0.0,
+    "f_arm_ss_N": 0.0,
+    "tau_lim_peak_Nm": 3.5154253213864908,
+    "tau_lim_ss_Nm": 0.8856267765402873,
+    "f_int_peak_N": 70.41289827462822,
+    "f_int_ss_N": 14.79538268977819,
+    "tau_fin_peak_ratio": 1.0,
+    "tau_arm_peak_ratio": 1.0,
+    "fin_defl_peak_deg": 35.34658484313452,
+    "fin_defl_ss_deg": 35.34278940019598
+  },
+  "ee_vsd": {
+    "f_total_peak_N": 16.266574435134828,
+    "f_total_ss_N": 15.290325284244046,
+    "f_fingers_ss_N": [
+      5.498337451379582,
+      2.5668493524555935,
+      0.0,
+      7.225138480408875
+    ],
+    "f_palm_ss_N": 0.0,
+    "f_arm_ss_N": 0.0,
+    "tau_lim_peak_Nm": 0.0,
+    "tau_lim_ss_Nm": 0.0,
+    "f_int_peak_N": 10.53321669412751,
+    "f_int_ss_N": 7.160057599221419,
+    "tau_fin_peak_ratio": 1.0,
+    "tau_arm_peak_ratio": 0.3609814774070813,
+    "fin_defl_peak_deg": 23.360732841224532,
+    "fin_defl_ss_deg": 21.052060815726115
+  },
+  "tip_vsd": {
+    "f_total_peak_N": 27.74946112019107,
+    "f_total_ss_N": 14.718397818402885,
+    "f_fingers_ss_N": [
+      3.5382397478857786,
+      3.5872804818331456,
+      3.6307466577361565,
+      3.9621309309478088
+    ],
+    "f_palm_ss_N": 0.0,
+    "f_arm_ss_N": 0.0,
+    "tau_lim_peak_Nm": 0.0,
+    "tau_lim_ss_Nm": 0.0,
+    "f_int_peak_N": 10.471429417720236,
+    "f_int_ss_N": 3.899609522003312,
+    "tau_fin_peak_ratio": 0.5266464835939259,
+    "tau_arm_peak_ratio": 0.33729766462917393,
+    "fin_defl_peak_deg": 22.08787211571876,
+    "fin_defl_ss_deg": 19.18823726821152
+  },
+  "poe_verify": {
+    "pos_max_err_m": 3.774758283725532e-15,
+    "jac_max_err": 4.163336342344337e-15,
+    "n_samples": 100,
+    "n_points": 8
+  },
+  "setup": {
+    "approach_z": 0.91,
+    "tilt_deg": 20.0,
+    "roll_deg": 25.0,
+    "dz": -0.1,
+    "approach_contacts": 0,
+    "approach_clearance_mm": 59.18411094627884,
+    "servo_kp": [
+      2000.0,
+      2000.0,
+      2000.0,
+      2000.0,
+      500.0,
+      500.0,
+      500.0
+    ],
+    "servo_kd": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      50.0,
+      50.0,
+      50.0
+    ],
+    "tip_k": 150.0,
+    "tip_c": 9.185586535436919,
+    "tip_fmax": 3.75
+  }
+}

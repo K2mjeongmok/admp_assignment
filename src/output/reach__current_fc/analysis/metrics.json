@@ -1,0 +1,79 @@
+{
+  "scenario": "reach__current_fc",
+  "segments": {
+    "hold home": {
+      "left": {
+        "step_size_mm": 0.0
+      },
+      "right": {
+        "step_size_mm": 0.0
+      }
+    },
+    "reach": {
+      "left": {
+        "step_size_mm": 197.7195707360181,
+        "rise_time_s": 0.6279999999999689,
+        "settling_time_2pct_s": null,
+        "overshoot_pct": 2.5887603019595185,
+        "steady_state_error_mm": 4.527255162681403,
+        "steady_state_ori_error_deg": 2.3531057228996017,
+        "ori_step_deg": 28.853707039487606,
+        "peak_ee_speed_mps": 0.2648665363473948,
+        "t_peak_speed_s": 0.6259999999999865,
+        "max_path_deviation_mm": 22.539015245511724,
+        "path_length_ratio": 1.3185825687291253,
+        "peak_qd_ratio": 0.4890121710785978,
+        "peak_tau_ratio": 0.44666469964157035
+      },
+      "right": {
+        "step_size_mm": 184.5633306247813,
+        "rise_time_s": 0.6229999999999729,
+        "settling_time_2pct_s": 3.074999999999717,
+        "overshoot_pct": 4.247451373487497,
+        "steady_state_error_mm": 2.8954720923210857,
+        "steady_state_ori_error_deg": 1.520249064953439,
+        "ori_step_deg": 28.424519316204748,
+        "peak_ee_speed_mps": 0.25171460091186176,
+        "t_peak_speed_s": 0.7329999999999747,
+        "max_path_deviation_mm": 21.17804369683,
+        "path_length_ratio": 1.2309293519868616,
+        "peak_qd_ratio": 0.4619930973651082,
+        "peak_tau_ratio": 0.4706025815491112
+      }
+    },
+    "return home": {
+      "left": {
+        "step_size_mm": 186.39862768939904,
+        "rise_time_s": 0.6040000000002017,
+        "settling_time_2pct_s": null,
+        "overshoot_pct": 2.2901363148385956,
+        "steady_state_error_mm": 4.334935518257431,
+        "steady_state_ori_error_deg": 1.0480340973844666,
+        "ori_step_deg": 28.174492268042002,
+        "peak_ee_speed_mps": 0.25347079988561244,
+        "t_peak_speed_s": 0.5220000000001743,
+        "max_path_deviation_mm": 13.078551333153262,
+        "path_length_ratio": 1.2612652439050633,
+        "peak_qd_ratio": 0.61889702521142,
+        "peak_tau_ratio": 0.6753542240666959
+      },
+      "right": {
+        "step_size_mm": 190.60851560806677,
+        "rise_time_s": 0.620000000000207,
+        "settling_time_2pct_s": null,
+        "overshoot_pct": 2.910268916748205,
+        "steady_state_error_mm": 7.83783874302923,
+        "steady_state_ori_error_deg": 2.6017692611452734,
+        "ori_step_deg": 29.870955518238336,
+        "peak_ee_speed_mps": 0.2589599453558012,
+        "t_peak_speed_s": 0.7260000000002425,
+        "max_path_deviation_mm": 6.786587829605728,
+        "path_length_ratio": 1.1539657708328293,
+        "peak_qd_ratio": 0.6036920886589345,
+        "peak_tau_ratio": 0.522135622769009
+      }
+    }
+  },
+  "min_ee_distance_m": 0.33171411531131234,
+  "max_contacts": 0
+}

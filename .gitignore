@@ -1,0 +1,15 @@
+src/.docs/
+.tools/
+
+src/report/
+
+*.npz
+
+src/xml/*_torque.xml
+src/xml/left_hand.xml
+src/xml/right_hand.xml
+src/xml/gen3_7dof.urdf
+
+__pycache__/
+*.pyc
+MUJOCO_LOG.TXT

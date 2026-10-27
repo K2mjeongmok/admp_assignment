@@ -1,0 +1,79 @@
+{
+  "scenario": "repulsion",
+  "segments": {
+    "hold home": {
+      "left": {
+        "step_size_mm": 0.0
+      },
+      "right": {
+        "step_size_mm": 0.0
+      }
+    },
+    "crossing targets": {
+      "left": {
+        "step_size_mm": 336.47935862515203,
+        "rise_time_s": null,
+        "settling_time_2pct_s": null,
+        "overshoot_pct": 0.0,
+        "steady_state_error_mm": 174.0725251590096,
+        "steady_state_ori_error_deg": 0.11505351323972723,
+        "ori_step_deg": 0.004628750022813832,
+        "peak_ee_speed_mps": 0.2775100319599816,
+        "t_peak_speed_s": 0.4680000000000004,
+        "max_path_deviation_mm": 57.660187174326396,
+        "path_length_ratio": 0.6267099615080166,
+        "peak_qd_ratio": 0.3921696039414074,
+        "peak_tau_ratio": 0.42945000916472786
+      },
+      "right": {
+        "step_size_mm": 336.6674086691129,
+        "rise_time_s": null,
+        "settling_time_2pct_s": null,
+        "overshoot_pct": 0.0,
+        "steady_state_error_mm": 177.327681187872,
+        "steady_state_ori_error_deg": 0.06773107951970692,
+        "ori_step_deg": 0.004579346350366496,
+        "peak_ee_speed_mps": 0.2733397813895517,
+        "t_peak_speed_s": 0.4630000000000004,
+        "max_path_deviation_mm": 58.425155703317984,
+        "path_length_ratio": 0.6143632441437079,
+        "peak_qd_ratio": 0.4028582146807825,
+        "peak_tau_ratio": 0.4172728990473326
+      }
+    },
+    "return home": {
+      "left": {
+        "step_size_mm": 181.67914143786828,
+        "rise_time_s": 0.5340000000001783,
+        "settling_time_2pct_s": 0.9580000000003199,
+        "overshoot_pct": 2.8051757777663324,
+        "steady_state_error_mm": 0.011997785600359454,
+        "steady_state_ori_error_deg": 0.004155970498919186,
+        "ori_step_deg": 0.10892108936382372,
+        "peak_ee_speed_mps": 0.38266282477689484,
+        "t_peak_speed_s": 0.09500000000003173,
+        "max_path_deviation_mm": 17.871431332551392,
+        "path_length_ratio": 1.112521291851317,
+        "peak_qd_ratio": 0.3862354559475354,
+        "peak_tau_ratio": 0.57428925231267
+      },
+      "right": {
+        "step_size_mm": 179.1366674554435,
+        "rise_time_s": 0.5290000000001767,
+        "settling_time_2pct_s": 0.9520000000003179,
+        "overshoot_pct": 2.8458332454774786,
+        "steady_state_error_mm": 0.015117166965005775,
+        "steady_state_ori_error_deg": 0.005170914895365512,
+        "ori_step_deg": 0.058572738829374554,
+        "peak_ee_speed_mps": 0.3776978017512049,
+        "t_peak_speed_s": 0.09500000000003173,
+        "max_path_deviation_mm": 16.69564082553565,
+        "path_length_ratio": 1.111392314979634,
+        "peak_qd_ratio": 0.392722770891361,
+        "peak_tau_ratio": 0.5561736613246967
+      }
+    }
+  },
+  "min_ee_distance_m": 0.2512541530593498,
+  "max_contacts": 0
+}

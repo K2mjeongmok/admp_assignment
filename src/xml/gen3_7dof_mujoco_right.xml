@@ -1,0 +1,324 @@
+<mujoco model="gen3_right">
+  <compiler angle="radian" meshdir="meshes/kinova_gen3_7dof_arm" autolimits="true"/>
+  <option timestep="0.001" integrator="implicitfast"/>
+
+  <default>
+    <default class="allegro_right">
+      <joint axis="0 1 0" damping=".1"/>
+      <motor ctrlrange="-0.7 0.7"/>
+      <geom density="800"/>
+
+      <default class="right_hand_visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" material="right_hand_black"/>
+        <default class="right_hand_palm_visual">
+          <geom mesh="right_hand_base_link"/>
+        </default>
+        <default class="right_hand_base_visual">
+          <geom mesh="right_hand_link_0_0"/>
+        </default>
+        <default class="right_hand_proximal_visual">
+          <geom mesh="right_hand_link_1_0"/>
+        </default>
+        <default class="right_hand_medial_visual">
+          <geom mesh="right_hand_link_2_0"/>
+        </default>
+        <default class="right_hand_distal_visual">
+          <geom mesh="right_hand_link_3_0"/>
+        </default>
+        <default class="right_hand_fingertip_visual">
+          <geom pos="0 0 0.0267" material="right_hand_white" mesh="right_hand_link_3_0_tip"/>
+        </default>
+        <default class="right_hand_thumbtip_visual">
+          <geom pos="0 0 0.0423" material="right_hand_white" mesh="right_hand_link_15_0_tip"/>
+        </default>
+      </default>
+
+      <default class="right_hand_collision">
+        <geom group="3" type="box" mass="0"/>
+        <default class="right_hand_palm_collision">
+          <geom size="0.0204 0.0565 0.0475" pos="-0.0093 0 -0.0475"/>
+        </default>
+        <default class="right_hand_base_collision">
+          <geom size="0.0098 0.01375 0.0082" pos="0 0 0.0082"/>
+          <default class="right_hand_thumb_base_collision">
+            <geom size="0.0179 0.017 0.02275" pos="-0.0179 0.009 0.0145"/>
+          </default>
+        </default>
+        <default class="right_hand_proximal_collision">
+          <geom size="0.0098 0.01375 0.027" pos="0 0 0.027"/>
+          <default class="right_hand_thumb_proximal_collision">
+            <geom size="0.0098 0.01375 0.00885" pos="0 0 0.00885"/>
+          </default>
+        </default>
+        <default class="right_hand_medial_collision">
+          <geom size="0.0098 0.01375 0.0192" pos="0 0 0.0192"/>
+          <default class="right_hand_thumb_medial_collision">
+            <geom size="0.0098 0.01375 0.0257" pos="0 0 0.0257"/>
+          </default>
+        </default>
+        <default class="right_hand_distal_collision">
+          <geom size="0.0098 0.01375 0.008" pos="0 0 0.008"/>
+          <default class="right_hand_thumb_distal_collision">
+            <geom size="0.0098 0.01375 0.0157" pos="0 0 0.0157"/>
+          </default>
+        </default>
+        <default class="right_hand_fingertip_collision">
+          <geom type="capsule" size="0.012 0.01" pos="0 0 0.019"/>
+          <default class="right_hand_thumbtip_collision">
+            <geom type="capsule" size="0.012 0.008" pos="0 0 0.035"/>
+          </default>
+        </default>
+      </default>
+
+      <default class="right_hand_base">
+        <joint axis="0 0 1" range="-0.47 0.47"/>
+      </default>
+      <default class="right_hand_proximal">
+        <joint range="-0.196 1.61"/>
+      </default>
+      <default class="right_hand_medial">
+        <joint range="-0.174 1.709"/>
+      </default>
+      <default class="right_hand_distal">
+        <joint range="-0.227 1.618"/>
+      </default>
+      <default class="right_hand_thumb_base">
+        <joint axis="-1 0 0" range="0.263 1.396"/>
+      </default>
+      <default class="right_hand_thumb_proximal">
+        <joint axis="0 0 1" range="-0.105 1.163"/>
+      </default>
+      <default class="right_hand_thumb_medial">
+        <joint range="-0.189 1.644"/>
+      </default>
+      <default class="right_hand_thumb_distal">
+        <joint range="-0.162 1.719"/>
+      </default>
+    </default>
+  </default>
+
+  <asset>
+    <mesh name="base_link_r" file="base_link.STL"/>
+    <mesh name="shoulder_link_r" file="shoulder_link.STL"/>
+    <mesh name="half_arm_1_link_r" file="half_arm_1_link.STL"/>
+    <mesh name="half_arm_2_link_r" file="half_arm_2_link.STL"/>
+    <mesh name="forearm_link_r" file="forearm_link.STL"/>
+    <mesh name="spherical_wrist_1_link_r" file="spherical_wrist_1_link.STL"/>
+    <mesh name="spherical_wrist_2_link_r" file="spherical_wrist_2_link.STL"/>
+    <mesh name="bracelet_no_vision_link_r" file="bracelet_no_vision_link.STL"/>
+    <material name="right_hand_black" rgba="0.2 0.2 0.2 1"/>
+    <material name="right_hand_white" rgba="0.9 0.9 0.9 1"/>
+    <mesh name="right_hand_base_link" file="../allegro_hand/base_link.stl"/>
+    <mesh name="right_hand_link_0_0" file="../allegro_hand/link_0.0.stl"/>
+    <mesh name="right_hand_link_1_0" file="../allegro_hand/link_1.0.stl"/>
+    <mesh name="right_hand_link_2_0" file="../allegro_hand/link_2.0.stl"/>
+    <mesh name="right_hand_link_3_0" file="../allegro_hand/link_3.0.stl"/>
+    <mesh name="right_hand_link_3_0_tip" file="../allegro_hand/link_3.0_tip.stl"/>
+    <mesh name="right_hand_link_12_0_right" file="../allegro_hand/link_12.0_right.stl"/>
+    <mesh name="right_hand_link_13_0" file="../allegro_hand/link_13.0.stl"/>
+    <mesh name="right_hand_link_14_0" file="../allegro_hand/link_14.0.stl"/>
+    <mesh name="right_hand_link_15_0" file="../allegro_hand/link_15.0.stl"/>
+    <mesh name="right_hand_link_15_0_tip" file="../allegro_hand/link_15.0_tip.stl"/>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+  </asset>
+
+  <contact>
+    <exclude body1="base_link_r" body2="shoulder_link_r" />
+    <exclude body1="right_palm" body2="right_ff_base"/>
+    <exclude body1="right_palm" body2="right_mf_base"/>
+    <exclude body1="right_palm" body2="right_rf_base"/>
+    <exclude body1="right_palm" body2="right_th_base"/>
+    <exclude body1="right_palm" body2="right_th_proximal"/>
+  </contact>
+
+  <worldbody>
+
+    <body name="base_link_r" pos="0 -0.04 1.3" quat="0.707105 0.707108 0 0">
+      <geom mesh="base_link_r"/>
+      <body name="shoulder_link_r" pos="0 0 0.15643" quat="-3.67321e-06 1 0 0">
+        <inertial pos="-2.3e-05 -0.010364 -0.07336" quat="0.707051 0.0451246 -0.0453544 0.704263" mass="1.3773" diaginertia="0.00488868 0.00457 0.00135132"/>
+        <joint class="infiniteJoints" name="right_joint_1" armature="0.015" damping="2.00" frictionloss="2.15"/>
+        <geom mesh="shoulder_link_r"/>
+        <body name="half_arm_1_link_r" pos="0 0.005375 -0.12838" quat="0.707105 0.707108 0 0">
+          <inertial pos="-4.4e-05 -0.09958 -0.013278" quat="0.482348 0.516286 -0.516862 0.483366" mass="1.1636" diaginertia="0.0113017 0.011088 0.00102532"/>
+          <joint class="limitedJoints" name="right_joint_2" range="-2.2497 2.2497" armature="0.015" damping="2.00" frictionloss="2.15"/>
+          <geom mesh="half_arm_1_link_r"/>
+          <body name="half_arm_2_link_r" pos="0 -0.21038 -0.006375" quat="0.707105 -0.707108 0 0">
+            <inertial pos="-4.4e-05 -0.006641 -0.117892" quat="0.706144 0.0213722 -0.0209128 0.707437" mass="1.1636" diaginertia="0.0111633 0.010932 0.00100671"/>
+            <joint class="infiniteJoints" name="right_joint_3" armature="0.015" damping="2.00" frictionloss="2.15"/>
+            <geom mesh="half_arm_2_link_r"/>
+            <body name="forearm_link_r" pos="0 0.006375 -0.21038" quat="0.707105 0.707108 0 0">
+              <inertial pos="-1.8e-05 -0.075478 -0.015006" quat="0.483678 0.515961 -0.515859 0.483455" mass="0.9302" diaginertia="0.00834839 0.008147 0.000598606"/>
+              <joint class="limitedJoints" name="right_joint_4" range="-2.5796 2.5796" armature="0.015" damping="2.00" frictionloss="2.15"/>
+              <geom mesh="forearm_link_r"/>
+              <body name="spherical_wrist_1_link_r" pos="0 -0.20843 -0.006375" quat="0.707105 -0.707108 0 0">
+                <inertial pos="1e-06 -0.009432 -0.063883" quat="0.703558 0.0707492 -0.0707492 0.703558" mass="0.6781" diaginertia="0.00165901 0.001596 0.000346988"/>
+                <joint class="infiniteJoints" name="right_joint_5" armature="0.01928" damping="1.36" frictionloss="1.60"/>
+                <geom mesh="spherical_wrist_1_link_r"/>
+                <body name="spherical_wrist_2_link_r" pos="0 0.00017505 -0.10593" quat="0.707105 0.707108 0 0">
+                  <inertial pos="1e-06 -0.045483 -0.00965" quat="0.44426 0.550121 -0.550121 0.44426" mass="0.6781" diaginertia="0.00170087 0.001641 0.00035013"/>
+                  <joint class="limitedJoints" name="right_joint_6" range="-2.0997 2.0997" armature="0.01928" damping="1.36" frictionloss="1.60"/>
+                  <geom mesh="spherical_wrist_2_link_r"/>
+                  <body name="bracelet_link_r" pos="0 -0.10593 -0.00017505" quat="0.707105 -0.707108 0 0">
+                    <inertial pos="-9.3e-05 0.000132 -0.022905" quat="-0.0368025 0.719402 -0.0444884 0.69219" mass="0.364" diaginertia="0.00024027 0.000222769 0.000213961"/>
+                    <joint class="infiniteJoints" name="right_joint_7" armature="0.01928" damping="1.36" frictionloss="1.60"/>
+                    <site name="ee_force_r" size="0.01" pos="0.0 0.0 0.0" />
+                    
+                    <geom mesh="bracelet_no_vision_link_r"/>
+                    <body name="end_effector_link_r" quat="0 1 0 0" pos="0 0 -0.061525">
+                      <!-- site for end effector's f/t sensor -->
+                       <site name="ee_site_r" size="0.001" pos="0.0 0.0 0.0" />
+                      <body name="right_palm" pos="0 0 0.09" quat="-1 0 0 1" childclass="allegro_right">
+                        <geom class="right_hand_palm_visual" mesh="right_hand_base_link"/>
+                        <geom class="right_hand_palm_collision"/>
+                        <body name="right_ff_base" pos="0 0.0435 -0.001542" quat="0.999048 -0.0436194 0 0">
+                          <joint name="right_ffj0" class="right_hand_base"/>
+                          <geom class="right_hand_base_visual"/>
+                          <geom class="right_hand_base_collision"/>
+                          <body name="right_ff_proximal" pos="0 0 0.0164">
+                            <joint name="right_ffj1" class="right_hand_proximal"/>
+                            <geom class="right_hand_proximal_visual"/>
+                            <geom class="right_hand_proximal_collision"/>
+                            <body name="right_ff_medial" pos="0 0 0.054">
+                              <joint name="right_ffj2" class="right_hand_medial"/>
+                              <geom class="right_hand_medial_visual"/>
+                              <geom class="right_hand_medial_collision"/>
+                              <body name="right_ff_distal" pos="0 0 0.0384">
+                                <joint name="right_ffj3" class="right_hand_distal"/>
+                                <geom class="right_hand_distal_visual"/>
+                                <geom class="right_hand_distal_collision"/>
+                                <body name="right_ff_tip">
+                                  <geom class="right_hand_fingertip_visual"/>
+                                  <geom class="right_hand_fingertip_collision"/>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="right_mf_base" pos="0 0 0.0007">
+                          <joint name="right_mfj0" class="right_hand_base"/>
+                          <geom class="right_hand_base_visual"/>
+                          <geom class="right_hand_base_collision"/>
+                          <body name="right_mf_proximal" pos="0 0 0.0164">
+                            <joint name="right_mfj1" class="right_hand_proximal"/>
+                            <geom class="right_hand_proximal_visual"/>
+                            <geom class="right_hand_proximal_collision"/>
+                            <body name="right_mf_medial" pos="0 0 0.054">
+                              <joint name="right_mfj2" class="right_hand_medial"/>
+                              <geom class="right_hand_medial_visual"/>
+                              <geom class="right_hand_medial_collision"/>
+                              <body name="right_mf_distal" pos="0 0 0.0384">
+                                <joint name="right_mfj3" class="right_hand_distal"/>
+                                <geom class="right_hand_distal_visual"/>
+                                <geom class="right_hand_distal_collision"/>
+                                <body name="right_mf_tip">
+                                  <geom class="right_hand_fingertip_visual"/>
+                                  <geom class="right_hand_fingertip_collision"/>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="right_rf_base" pos="0 -0.0435 -0.001542" quat="0.999048 0.0436194 0 0">
+                          <joint name="right_rfj0" class="right_hand_base"/>
+                          <geom class="right_hand_base_visual"/>
+                          <geom class="right_hand_base_collision"/>
+                          <body name="right_rf_proximal" pos="0 0 0.0164">
+                            <joint name="right_rfj1" class="right_hand_proximal"/>
+                            <geom class="right_hand_proximal_visual"/>
+                            <geom class="right_hand_proximal_collision"/>
+                            <body name="right_rf_medial" pos="0 0 0.054">
+                              <joint name="right_rfj2" class="right_hand_medial"/>
+                              <geom class="right_hand_medial_visual"/>
+                              <geom class="right_hand_medial_collision"/>
+                              <body name="right_rf_distal" pos="0 0 0.0384">
+                                <joint name="right_rfj3" class="right_hand_distal"/>
+                                <geom class="right_hand_distal_visual"/>
+                                <geom class="right_hand_distal_collision"/>
+                                <body name="right_rf_tip">
+                                  <geom class="right_hand_fingertip_visual"/>
+                                  <geom class="right_hand_fingertip_collision"/>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                        <body name="right_th_base" pos="-0.0182 0.019333 -0.045987" quat="0.477714 -0.521334 -0.521334 -0.477714">
+                          <joint name="right_thj0" class="right_hand_thumb_base"/>
+                          <geom class="right_hand_visual" mesh="right_hand_link_12_0_right"/>
+                          <geom class="right_hand_thumb_base_collision"/>
+                          <body name="right_th_proximal" pos="-0.027 0.005 0.0399">
+                            <joint name="right_thj1" class="right_hand_thumb_proximal"/>
+                            <geom class="right_hand_visual" mesh="right_hand_link_13_0"/>
+                            <geom class="right_hand_thumb_proximal_collision"/>
+                            <body name="right_th_medial" pos="0 0 0.0177">
+                              <joint name="right_thj2" class="right_hand_thumb_medial"/>
+                              <geom class="right_hand_visual" mesh="right_hand_link_14_0"/>
+                              <geom class="right_hand_thumb_medial_collision"/>
+                              <body name="right_th_distal" pos="0 0 0.0514">
+                                <joint name="right_thj3" class="right_hand_thumb_distal"/>
+                                <geom class="right_hand_visual" mesh="right_hand_link_15_0"/>
+                                <geom class="right_hand_thumb_distal_collision"/>
+                                <body name="right_th_tip">
+                                  <geom class="right_hand_thumbtip_visual"/>
+                                  <geom class="right_hand_thumbtip_collision"/>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <!-- <position name="right_joint_1_servo" joint="right_joint_1" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_2_servo" joint="right_joint_2" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_3_servo" joint="right_joint_3" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_4_servo" joint="right_joint_4" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_5_servo" joint="right_joint_5" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_6_servo" joint="right_joint_6" kp="500" kv="120" ctrlrange="-100 100"/>
+    <position name="right_joint_7_servo" joint="right_joint_7" kp="500" kv="120" ctrlrange="-100 100"/> -->
+
+    <motor name="right_joint_1_motor" joint="right_joint_1" gear="100" ctrlrange="-0.39 0.39"/>
+    <motor name="right_joint_2_motor" joint="right_joint_2" gear="100" ctrlrange="-0.39 0.39"/>
+    <motor name="right_joint_3_motor" joint="right_joint_3" gear="100" ctrlrange="-0.39 0.39"/>
+    <motor name="right_joint_4_motor" joint="right_joint_4" gear="100" ctrlrange="-0.39 0.39"/>
+    <motor name="right_joint_5_motor" joint="right_joint_5" gear="100" ctrlrange="-0.09 0.09"/>
+    <motor name="right_joint_6_motor" joint="right_joint_6" gear="100" ctrlrange="-0.09 0.09"/>
+    <motor name="right_joint_7_motor" joint="right_joint_7" gear="100" ctrlrange="-0.09 0.09"/>
+    <motor name="right_ffa0" joint="right_ffj0" class="right_hand_base"/>
+    <motor name="right_ffa1" joint="right_ffj1" class="right_hand_proximal"/>
+    <motor name="right_ffa2" joint="right_ffj2" class="right_hand_medial"/>
+    <motor name="right_ffa3" joint="right_ffj3" class="right_hand_distal"/>
+    <motor name="right_mfa0" joint="right_mfj0" class="right_hand_base"/>
+    <motor name="right_mfa1" joint="right_mfj1" class="right_hand_proximal"/>
+    <motor name="right_mfa2" joint="right_mfj2" class="right_hand_medial"/>
+    <motor name="right_mfa3" joint="right_mfj3" class="right_hand_distal"/>
+    <motor name="right_rfa0" joint="right_rfj0" class="right_hand_base"/>
+    <motor name="right_rfa1" joint="right_rfj1" class="right_hand_proximal"/>
+    <motor name="right_rfa2" joint="right_rfj2" class="right_hand_medial"/>
+    <motor name="right_rfa3" joint="right_rfj3" class="right_hand_distal"/>
+    <motor name="right_tha0" joint="right_thj0" class="right_hand_thumb_base"/>
+    <motor name="right_tha1" joint="right_thj1" class="right_hand_thumb_proximal"/>
+    <motor name="right_tha2" joint="right_thj2" class="right_hand_thumb_medial"/>
+    <motor name="right_tha3" joint="right_thj3" class="right_hand_thumb_distal"/>
+  </actuator>
+  
+  <sensor>
+    <force name="EEForceSensor_fsensor_r" site="ee_force_r"/>
+    <torque name="EEForceSensor_tsensor_r" site="ee_force_r" />
+
+    <framepos name="ee_r_accel" objtype="site" objname="ee_site_r"/>
+    <framequat name="ee_r_gyro" objtype="site" objname="ee_site_r"/>
+  </sensor>
+
+</mujoco>
